@@ -1,0 +1,65 @@
+.output{
+	font-family:courier;
+	font-size: 0.9em;
+	color: white;
+}
+.info
+{
+	float: left;
+	width: 8.5em;
+	background: black;
+	margin: 5px;
+	text-align: right;
+	padding: 4px;
+}
+.Bish{
+	color: blue;
+}
+.Bosh{
+	color: yellow;
+}
+.Bish-Bosh{
+	color: white;
+}
+
+.content{
+	width: 80%;
+	margin: auto;
+}
+
+body{
+	background:url('../img/bakgrund.jpg');
+	background-repeat: no-repeat;
+	background-color: #cccccc;
+	background-size: cover;
+	font-family: calibri, arial;
+	color: #cccccc;
+	font-size: 25px;
+}
+input[type=range] {
+    -webkit-appearance: none;
+    width: 35%;
+    margin: 1.8px 0;
+    margin-left: 1%;
+  }
+ 
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 50%;
+ 
+    cursor: pointer;
+    box-shadow: 1.4px 1.4px 1.7px #ffb2df, 0px 0px 1.4px #ffccea;
+    background: rgba(117, 207, 239, 0.43);
+    border-radius: 0px;
+    border: 5.5px solid #f7d58f;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 3.2px #b0aaff, 0px 0px 0px #c8c3ff;
+    border: 5px solid #c47346;
+    height: 50px;
+    width: 50px;
+    border-radius: 14px;
+    background: #ffff7d;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7.3px;
+  }

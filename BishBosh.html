@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bish Bosh </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab%7CKalam%7CNotable" rel="stylesheet">
+    <script src="bishbosh.js" type="text/javascript"></script>
+</head>
+<body onload="update();">
+    <div class="content">
+        <header>
+            <h1>Bish-Bosh 2.0</h1>
+        </header>
+    
+        
+        <p>Bish-Bosh listar tal mellan 1 och det du väljer nedan (<span id="iteration-text"></span>).
+        <br/>Om talet är jämnt delbart med ditt valda bish-tal (<span id="bish-text"></span>) visas ‘Bish’ istället för talet. 
+        <br/>Om talet är jämnt delbart med ditt valda bosh-tal (<span id="bosh-text"></span>) visas ‘ Bosh ’ istället för talet. 
+        <br/>Om talet är jämt delbart med båda dina tal visas “ Bish-Bosh ”.</p>
+    
+        <span>Antal nummer: </span><input type="range" min="1" max="100" value="40" id="iteration" oninput="update();"/> <span id="iteration-nr"></span><br/>
+        <span>Bish-nummer: </span><input type="range" value="3" min="1" max="50" id="bish" oninput="update();"/> <span id="bish-nr"></span><br/>
+        <span>Bosh-nummer: </span><input type="range" id="bosh" value="4" min="1" max="50" oninput="update();"/> <span id="bosh-nr"></span><br/><br/>
+    
+        <div class="output" id="out" name="out"></div>
+        
+        <footer></footer>
+        
+        
+    
+    </div>   
+</body>
+</html>
